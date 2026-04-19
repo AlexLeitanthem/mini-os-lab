@@ -1,6 +1,3 @@
-// WHY: Main application entry point that boots the OS and delegates rendering to UI modules
-// CONTEXT: Keeps simulator logic stable while moving DOM concerns into src/ui/*
-
 class MiniOSApp {
   constructor() {
     this.root = document.getElementById("os-root");
