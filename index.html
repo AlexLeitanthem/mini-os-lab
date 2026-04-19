@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini OS Lab</title>
+  <meta
+    name="description"
+    content="Mini OS Lab is a browser-based operating system and networking simulator for ECE and computer networks learning."
+  >
+  <meta
+    name="keywords"
+    content="Mini OS, ECE project, operating system simulator, networking simulator, vanilla JavaScript"
+  >
+  <meta property="og:title" content="Mini OS Lab">
+  <meta
+    property="og:description"
+    content="A browser-based operating system and networking simulator for ECE and computer networks learning."
+  >
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0d0d0f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect width='128' height='128' rx='24' fill='%230b1726'/%3E%3Cpath d='M20 74h24l10-28 18 44 10-28h26' stroke='%2320b3a9' stroke-width='10' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='97' cy='34' r='10' fill='%23f18f3b'/%3E%3C/svg%3E"
+  >
+  <link rel="stylesheet" href="src/ui/theme.css">
+  <link rel="stylesheet" href="src/ui/terminal.css">
+  <link rel="stylesheet" href="src/ui/docs-overlay.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar" aria-label="Top navigation">
+      <div class="topbar-title">
+        <strong>Mini OS Lab</strong>
+        <span>OS + Networking simulator</span>
+      </div>
+      <div class="topbar-actions">
+        <button type="button" class="btn" id="reset-session">Reset Session</button>
+        <button type="button" class="btn btn-accent" id="guides-docs">Guides &amp; Docs</button>
+      </div>
+    </header>
+    <main class="main">
+      <div id="os-root" class="terminal-host" aria-label="Mini OS Lab terminal"></div>
+    </main>
+  </div>
+
+  <script src="src/utils/helpers.js"></script>
+  <script src="src/memory-manager.js"></script>
+  <script src="src/filesystem.js"></script>
+  <script src="src/process-manager.js"></script>
+  <script src="src/user-manager.js"></script>
+  <script src="src/device-manager.js"></script>
+  <script src="src/kernel.js"></script>
+  <script src="src/shell.js"></script>
+  <script src="src/apps/text-editor.js"></script>
+  <script src="app.js"></script>
+  <script src="src/ui/theme.js"></script>
+  <script src="src/ui/terminal-ui.js"></script>
+  <script src="src/ui/docs-overlay.js"></script>
+</body>
+</html>
