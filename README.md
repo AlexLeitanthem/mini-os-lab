@@ -90,15 +90,6 @@ mini-os/
 `-- .github/workflows/
     `-- deploy-pages.yml
 ```
-
-## Optional deployment
-
-1. Create a new GitHub repository and push this project.
-2. Keep the default branch as `main`.
-3. In GitHub, open `Settings -> Pages`.
-4. Set the source to `GitHub Actions`.
-5. Push again if needed. The included workflow will publish the site automatically.
-
 ## License
 
 MIT
